@@ -43,10 +43,3 @@ public:
         return ans;
     }
 };
-
-int main()
-{   
-    Solution s;
-    std::cout<< s.lengthOfLongestSubstring("qwccdwa")<< endl;
-    return 0;
-}

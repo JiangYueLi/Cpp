@@ -8,6 +8,10 @@
 
 class Solution {
 public:
+    int isBadVersion(int n)
+    {
+        return true;
+    }
     int firstBadVersion(int n) {
         int left = 1;
         int right = n;
