@@ -16,13 +16,13 @@ public:
     };
 
     int maxDepth(TreeNode* root) {
-        if(root == NULL)
+        if(!root)
         {
             return 0;
         }
         int deepL = height(root->left);
         int deepR = height(root->right);
-        return max(deepL,deepR);
+        return max(deepL,deepR)+1;
     }
     int height(TreeNode* &root){
         if(root == nullptr) return 0;
