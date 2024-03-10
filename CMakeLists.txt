@@ -8,4 +8,6 @@ add_executable(Cpp main.cpp leetcode/299-getHint.cpp
         leetcode/100233-minimumBoxes.cpp
         leetcode/100247-maximumHappinessSum.cpp
         leetcode/100251-shortestSubstrings.cpp
-        leetcode/100216-maximumStrength.cpp)
+        leetcode/100216-maximumStrength.cpp
+        leetcode/113-pathSum.cpp
+        leetcode/46-permute.cpp)
