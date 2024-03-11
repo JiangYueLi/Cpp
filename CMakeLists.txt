@@ -3,11 +3,4 @@ project(Cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Cpp main.cpp leetcode/299-getHint.cpp
-        leetcode/215-findKthLargest.cpp
-        leetcode/100233-minimumBoxes.cpp
-        leetcode/100247-maximumHappinessSum.cpp
-        leetcode/100251-shortestSubstrings.cpp
-        leetcode/100216-maximumStrength.cpp
-        leetcode/113-pathSum.cpp
-        leetcode/46-permute.cpp)
+add_executable(Cpp main.cpp leetcode/232.cpp leetcode/206.cpp leetcode/86.cpp leetcode/20.cpp leetcode/155-MinStack.cpp leetcode/242-isAnagram.cpp leetcode/387-firstUniqChar.cpp leetcode/205-isIsomorphic.cpp leetcode/409-longestPalindrome.cpp leetcode/2575-divisibilityArray.cpp leetcode/392-isSubsequence.cpp leetcode/876-middleNode.cpp leetcode/160-getIntersectionNode.cpp leetcode/167-twoSum.cpp leetcode/142-detectCycle.cpp leetcode/3-lengthOfLongestSubstring.cpp leetcode/239-maxSlidingWindow.cpp leetcode/415-addStrings.cpp leetcode/796-rotateString.cpp leetcode/946-validateStackSequences.cpp leetcode/6-convert.cpp leetcode/704-search.cpp leetcode/2834-minimumPossibleSum.cpp leetcode/278-firstBadVersion.cpp leetcode/724-pivotIndex.cpp leetcode/287-findDuplicate.cpp leetcode/154-findMin.cpp leetcode/102-levelOrder.cpp leetcode/103-zigzagLevelOrder.cpp leetcode/2129-capitalizeTitle.cpp leetcode/47-permuteUnique.cpp)
