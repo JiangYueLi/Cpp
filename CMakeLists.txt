@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Cpp main.cpp
         leetcode/343-integerBreak.cpp
-        leetcode/1823-findTheWinner.cpp)
+        leetcode/1823-findTheWinner.cpp
+        leetcode/128-longestConsecutive.cpp
+        leetcode/15-threeSum.cpp)

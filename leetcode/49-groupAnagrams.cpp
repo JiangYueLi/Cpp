@@ -47,7 +47,7 @@ public:
         }
 
         vector<vector<string >> res;
-        for(auto m:mp)
+        for(auto &m:mp)
         {
             res.emplace_back(m.second);
         }
