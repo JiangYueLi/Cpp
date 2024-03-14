@@ -1,12 +1,22 @@
 #include <iostream>
 #include <vector>
-#include "leetcode/299-getHint.cpp"
+#include "leetcode/924-minMalwareSpread.cpp"
 using namespace std;
 int main() {
-    string a = "1807";
-    string b = "7810";
+    vector<vector<int>> graph = {
+            {1, 1, 0, 0, 0, 0, 0, 0, 0},
+            {1, 1, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 1, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 1, 0, 0, 1, 0},
+            {0, 0, 0, 0, 0, 1, 0, 1, 0},
+            {0, 0, 0, 0, 0, 0, 1, 0, 1},
+            {0, 0, 0, 0, 1, 1, 0, 1, 0},
+            {0, 0, 0, 0, 0, 0, 1, 0, 1}
+    };
+    vector<int> res = {6,2,8,0,4};
     Solution s;
 
-    std::cout << s.getHint(a,b) << std::endl;
+    std::cout << s.minMalwareSpread(graph,res) << std::endl;
     return 0;
 }

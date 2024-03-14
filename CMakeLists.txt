@@ -10,4 +10,5 @@ add_executable(Cpp main.cpp
         leetcode/15-threeSum.cpp leetcode/2789-maxArrayValue.cpp leetcode/54-spiralOrder.cpp leetcode/48-rotate.cpp leetcode/84-largestRectangleArea.cpp leetcode/85-maximalRectangle.cpp leetcode/739-dailyTemperatures.cpp leetcode/503-nextGreaterElements.cpp
         leetcode/547-findCircleNum.cpp
         leetcode/684-findRedundantConnection.cpp
-        leetcode/200-numIslands.cpp)
+        leetcode/200-numIslands.cpp
+        leetcode/924-minMalwareSpread.cpp)
