@@ -1,0 +1,27 @@
+.rock-editor__renderer {
+  padding: 0 !important;
+  word-break: break-word !important;
+}
+
+.rock-editor__renderer pre {
+  overflow: auto;
+  margin-bottom: 1em;
+  margin-top: 0;
+  padding: 0 !important;
+}
+
+.rock-editor__renderer td img {
+  height: auto;
+}
+
+.rock-editor__renderer video:fullscreen {
+  object-fit: contain;
+}
+
+.rock-editor__renderer img:fullscreen {
+  object-fit: contain;
+}
+
+.rock-editor__renderer pre code.hljs {
+  background: #f8f8f8;
+}
