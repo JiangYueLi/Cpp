@@ -12,4 +12,5 @@ add_executable(Cpp main.cpp
         leetcode/684-findRedundantConnection.cpp
         leetcode/200-numIslands.cpp
         leetcode/924-minMalwareSpread.cpp
-        leetcode/2312-sellingWood.cpp)
+        leetcode/2312-sellingWood.cpp
+        leetcode/1208-equalSubstring.cpp)
