@@ -17,4 +17,5 @@ add_executable(Cpp main.cpp
         leetcode/1004-longestOnes.cpp
         leetcode/523-checkSubarraySum.cpp
         leetcode/974-subarraysDivByK.cpp
-        leetcode/1094-carPooling.cpp)
+        leetcode/1094-carPooling.cpp
+        leetcode/2684-maxMoves.cpp)
