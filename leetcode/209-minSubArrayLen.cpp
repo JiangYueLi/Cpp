@@ -10,38 +10,31 @@ using namespace std;
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-        int left = 0;
-        int right =1;
-        if(nums[left] > target)
+        if(nums[0]>=target)
         {
             return 1;
         }
-        if(nums.size()==1&& nums[0]<target)
-        {
-            return 0;
-        }
         int res = INT_MAX;
-        int now = nums[left];
-        while(right<nums.size() && left<nums.size())
+        int n = nums.size();
+        int left =  0;
+        int right = 0;
+        int nowSum = 0;
+        while (right<n && left<=right)
         {
-
-           now += nums[right];
-           while(now>=target&& left<=right)
-           {
-               res = min(res,right-left+1);
-               now = now - nums[left];
-               left++;
-
-           }
-            if(right == nums.size()-1 && left == 0 && now<target)
+            nowSum += nums[right];
+            while (nowSum-nums[left]>=target)
             {
-                return 0;
+                nowSum -=nums[left];
+                left++;
+
             }
-           right++;
-
+            if(nowSum>=target)
+            {
+                res = min(res,right-left+1);
+            }
+            right++;
         }
-        return res;
-
+        return res<=n?res:0;
     }
 };
 int main()
