@@ -11,4 +11,5 @@ add_executable(Cpp main.cpp
         leetcode/547-findCircleNum.cpp
         leetcode/684-findRedundantConnection.cpp
         leetcode/200-numIslands.cpp
-        leetcode/924-minMalwareSpread.cpp)
+        leetcode/924-minMalwareSpread.cpp
+        leetcode/2312-sellingWood.cpp)
