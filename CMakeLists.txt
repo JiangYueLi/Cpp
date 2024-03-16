@@ -18,4 +18,6 @@ add_executable(Cpp main.cpp
         leetcode/523-checkSubarraySum.cpp
         leetcode/974-subarraysDivByK.cpp
         leetcode/1094-carPooling.cpp
-        leetcode/2684-maxMoves.cpp)
+        leetcode/2684-maxMoves.cpp
+        leetcode/1109-corpFlightBookings.cpp
+        leetcode/5-longestPalindrome.cpp)
