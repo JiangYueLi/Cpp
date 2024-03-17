@@ -23,4 +23,5 @@ add_executable(Cpp main.cpp
         leetcode/5-longestPalindrome.cpp
         leetcode/100262-sumOfEncryptedInt.cpp
         leetcode/100209-unmarkedSumArray.cpp
-        leetcode/100249-minimizeStringValue.cpp)
+        leetcode/100249-minimizeStringValue.cpp
+        leetcode/303-NumArray.cpp)
