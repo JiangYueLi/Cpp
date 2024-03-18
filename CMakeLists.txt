@@ -28,4 +28,7 @@ add_executable(Cpp main.cpp
         leetcode/93-restoreIpAddresses.cpp
         leetcode/43-multiply.cpp
         leetcode/127-ladderLength.cpp
-        leetcode/139-wordBreak.cpp)
+        leetcode/139-wordBreak.cpp
+        leetcode/130-solve.cpp
+        leetcode/529.cpp
+        leetcode/934-shortestBridge.cpp)
