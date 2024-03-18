@@ -26,4 +26,5 @@ add_executable(Cpp main.cpp
         leetcode/100249-minimizeStringValue.cpp
         leetcode/303-NumArray.cpp
         leetcode/93-restoreIpAddresses.cpp
-        leetcode/43-multiply.cpp)
+        leetcode/43-multiply.cpp
+        leetcode/127-ladderLength.cpp)
