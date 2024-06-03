@@ -23,7 +23,7 @@ public:
 int main()
 {
     Solution p;
-    int c = 5;
+    int c = 6;
     vector<int> a= {0,1,2,2,3,0,4,2};
     int b = p.removeElement(a,2);
     for(auto it = a.begin(); it != a.end();++it)
