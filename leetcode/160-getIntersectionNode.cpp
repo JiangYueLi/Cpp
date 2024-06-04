@@ -14,17 +14,19 @@ using namespace std;
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        if(headA== nullptr || headB == nullptr)
+        if(headA == nullptr || headB == nullptr)
         {
             return nullptr;
         }
-        ListNode *PA =headA;
-        ListNode *PB = headB;
-        while (PA!=PB)
+
+        ListNode *pa = headA;
+        ListNode *pb = headB;
+
+        while(pa!=pb)
         {
-            PA = PA== nullptr?headB:PA->next;
-            PB = PB== nullptr?headA:PB->next;
+            pa = pa == nullptr ? headB:pa->next;
+            pb = pb == nullptr ? headA:pb->next;
         }
-        return PA;
+        return pa;
     }
 };
