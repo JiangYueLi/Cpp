@@ -45,7 +45,7 @@ using namespace std;
 struct ListNode {
       int val;
       ListNode *next;
-      ListNode(int x) : val(x), next(NULL) {}
+      ListNode(int x) : val(x), next(nullptr) {}
 };
 
 class Solution {
@@ -53,10 +53,11 @@ public:
     bool hasCycle(ListNode *head) {
         ListNode *a = head;
         ListNode *b = head;
-        while(b!=NULL && b->next!=NULL)
+        while (b!= nullptr && b->next!= nullptr)
         {
             a = a->next;
             b = b->next->next;
+
             if(a == b)
             {
                 return true;

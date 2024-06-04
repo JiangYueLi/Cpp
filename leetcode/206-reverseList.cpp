@@ -12,12 +12,11 @@ struct ListNode{
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode *pre = new ListNode();
-
+        ListNode *pre = nullptr;
         while(head)
         {
             ListNode *p = head->next;
-            head->next =pre;
+            head->next = pre;
             pre = head;
             head = p;
         }
