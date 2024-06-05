@@ -31,4 +31,5 @@ add_executable(Cpp main.cpp
         leetcode/139-wordBreak.cpp
         leetcode/130-solve.cpp
         leetcode/529.cpp
-        leetcode/934-shortestBridge.cpp)
+        leetcode/934-shortestBridge.cpp
+        leetcode/264-nthUglyNumber.cpp)
