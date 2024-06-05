@@ -13,14 +13,18 @@ public:
             return false;
         }
 
-        vector<int> factors{2,3,5};
-        for(auto factor:factors)
+        while(n%2 == 0)
         {
-            while (n%factor==0)
-            {
-                n /= factor;
-            }
+            n /=2;
         }
-        return n==1;
+        while(n%3 == 0)
+        {
+            n /=3;
+        }
+        while(n%5 == 0)
+        {
+            n /=5;
+        }
+        return n == 1;
     }
 };
