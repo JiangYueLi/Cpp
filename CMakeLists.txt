@@ -33,4 +33,5 @@ add_executable(Cpp main.cpp
         leetcode/529.cpp
         leetcode/934-shortestBridge.cpp
         leetcode/264-nthUglyNumber.cpp
-        leetcode/2938-minimumSteps.cpp)
+        leetcode/2938-minimumSteps.cpp
+        leetcode/438-findAnagrams.cpp)

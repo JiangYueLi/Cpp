@@ -9,29 +9,14 @@ using namespace std;
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-//        int n = nums.size();
-//        int ans = 0;
-//        for(int i = 0;i<n;i++)
-//        {
-//            int sum =0;
-//            for (int end = i;end>=0;end--)
-//            {
-//                sum += nums[end];
-//                if(sum == k)
-//                {
-//                    ans++;
-//                }
-//            }
-//        }
-//        return ans;
-        int res= 0;
+        int sum = 0;
         unordered_map<int,int> map;
         map[0] =1;
-        int sum =0;
-        for(auto num:nums)
+        int res= 0;
+        for(auto &num:nums)
         {
             sum += num;
-            res +=map[sum-k];
+            res += map[sum - k];
             map[sum]++;
         }
         return res;
