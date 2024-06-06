@@ -9,26 +9,30 @@ public:
     vector<int> findAnagrams(string s, string p) {
         int sLen = s.length();
         int pLen = p.length();
-        if (sLen < pLen) {
+        if(pLen>sLen)
+        {
             return {};
         }
-        vector<int> ans;
-        vector<int> sCount(26);
-        vector<int> pCount(26);
-        for (int i = 0; i < pLen; ++i) {
-            ++sCount[s[i] - 'a'];
-            ++pCount[p[i] - 'a'];
-        }
 
-        if(sCount == pCount)
+        vector<int> ans;
+        vector<int> scount(26);
+        vector<int> pcount(26);
+
+        for(int i =0;i<pLen;i++)
+        {
+            scount[s[i] -'a']++;
+            pcount[p[i] -'a']++;
+        }
+        if(scount == pcount)
         {
             ans.emplace_back(0);
         }
+
         for(int i =0;i<sLen-pLen;i++)
         {
-            --sCount[s[i]-'a'];
-            ++sCount[s[i+pLen]-'a'];
-            if(sCount==pCount)
+            scount[s[i]-'a']--;
+            scount[s[i+pLen]-'a']++;
+            if(scount == pcount)
             {
                 ans.emplace_back(i+1);
             }

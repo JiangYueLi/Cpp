@@ -12,32 +12,33 @@ struct ListNode {
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-
-        ListNode *q = new ListNode(-1);
-        ListNode *p = q;
+        ListNode *pre = new ListNode(-1);
+        ListNode *p = pre;
         while(list1&&list2)
         {
-            if(list1->val<list2->val)
+            if(list1->val>list2->val)
             {
-                p->next = list1;
-                list1 = list1->next;
+                p->next=list2;
+                list2 = list2->next;
             }
             else
             {
-                p->next = list2;
-                list2 = list2->next;
+                p->next=list1;
+                list1 = list1->next;
             }
             p = p->next;
         }
+
         if(list1)
         {
             p->next = list1;
-
         }
+
         if(list2)
         {
             p->next = list2;
         }
-        return q->next;
+        return pre->next;
     }
+
 };
