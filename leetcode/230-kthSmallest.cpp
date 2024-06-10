@@ -21,7 +21,7 @@ public:
         //中序遍历
         vector<int> result;
         dfs(root,result);
-        return result[k];
+        return result[k-1];
     }
 
     void dfs(TreeNode* root,vector<int>& res)
