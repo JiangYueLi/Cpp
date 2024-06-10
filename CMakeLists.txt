@@ -39,4 +39,5 @@ add_executable(Cpp main.cpp
         leetcode/2269-divisorSubstrings.cpp
         leetcode/1984-minimumDifference.cpp
         leetcode/94-inorderTraversal.cpp
-        leetcode/543-diameterOfBinaryTree.cpp)
+        leetcode/543-diameterOfBinaryTree.cpp
+        leetcode/108-sortedArrayToBST.cpp)
