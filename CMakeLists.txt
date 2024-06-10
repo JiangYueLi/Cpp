@@ -37,4 +37,6 @@ add_executable(Cpp main.cpp
         leetcode/438-findAnagrams.cpp
         leetcode/1456-maxVowels.cpp
         leetcode/2269-divisorSubstrings.cpp
-        leetcode/1984-minimumDifference.cpp)
+        leetcode/1984-minimumDifference.cpp
+        leetcode/94-inorderTraversal.cpp
+        leetcode/543-diameterOfBinaryTree.cpp)
