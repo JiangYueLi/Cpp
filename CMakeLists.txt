@@ -42,4 +42,6 @@ add_executable(Cpp main.cpp
         leetcode/543-diameterOfBinaryTree.cpp
         leetcode/108-sortedArrayToBST.cpp
         leetcode/98-isValidBST.cpp
-        leetcode/199-rightSideView.cpp)
+        leetcode/199-rightSideView.cpp
+        leetcode/437-pathSum.cpp
+        leetcode/419-countBattleships.cpp)
