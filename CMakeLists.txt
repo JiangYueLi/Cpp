@@ -44,4 +44,5 @@ add_executable(Cpp main.cpp
         leetcode/98-isValidBST.cpp
         leetcode/199-rightSideView.cpp
         leetcode/437-pathSum.cpp
-        leetcode/419-countBattleships.cpp)
+        leetcode/419-countBattleships.cpp
+        leetcode/24-swapPairs.cpp)
