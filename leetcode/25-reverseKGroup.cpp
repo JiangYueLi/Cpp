@@ -16,28 +16,28 @@
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
-        ListNode *dum = new ListNode(-1);
-        dum->next = head;
-        ListNode *pre = dum;
-        while(true)
+        ListNode *dump = new ListNode(-1);
+        dump->next = head;
+        ListNode *pre = dump;
+        while (true)
         {
             ListNode *last = pre;
-            for(int i = 0;i<k;i++)
+            for(int i =0;i<k;i++)
             {
                 last = last->next;
                 if(last == nullptr)
                 {
-                    return dum->next;
+                    return dump->next;
                 }
             }
 
             ListNode *cur = pre->next;
-            for(int i =0;i<k-1;i++)
+            for(int i=0;i<k-1;i++)
             {
-                ListNode *next = cur->next;
-                cur->next = next->next;
-                next->next = pre->next;
-                pre->next = next;
+                ListNode *next = cur->next;    //2
+                cur->next =next->next;    //头连下一组
+                next->next = pre->next; // 2-》1；
+                pre->next = next;    //0-2》
             }
             pre = cur;
         }
